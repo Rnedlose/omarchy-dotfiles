@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Hyprland Wiki
+Comment=Hyprland Wiki
+Exec=omarchy-launch-webapp https://wiki.hypr.land
+Terminal=false
+Type=Application
+Icon=/home/rodney/.local/share/applications/icons/Hyprland Wiki.png
+StartupNotify=true
