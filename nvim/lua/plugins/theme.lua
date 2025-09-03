@@ -1,0 +1,1 @@
+/home/rodney/.config/omarchy/current/theme/neovim.lua

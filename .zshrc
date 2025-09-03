@@ -1,7 +1,9 @@
 export PATH=$PATH:/home/rodney/.local/bin
 export EDITOR="nvim"
 export VISUAL="nvim"
+export PATH="$HOME/.tmuxifier/bin:$PATH"
 
+eval "$(tmuxifier init -)"
 eval "$(starship init zsh)"
 
 # Set the directory we want to store zinit and plugins
@@ -72,6 +74,8 @@ alias wv='cd ~/.config/waybar && nvim config.jsonc'
 alias zsh='cd && source .zshrc'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias td='tmux a -t Dots'
+alias ts='tmux a -t Scratchpad'
 
 
 # Hypridle management aliases

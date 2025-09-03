@@ -1,0 +1,48 @@
+/* === Vague theme for wofi === */
+@define-color bg0     #141415;
+@define-color bg1     #252530;
+@define-color fg      #cdcdcd;
+@define-color accent  #6e94b2;
+@define-color muted   #aeaed1;
+@define-color border  #606079;
+
+* {
+  font-family: "Hack Nerd Font", monospace;
+  font-size: 12pt;
+  color: @fg;
+}
+
+window {
+  background-color: @bg0;
+  border: 1px solid @border;
+  border-radius: 12px;
+}
+
+#outer-box { padding: 8px; }
+
+#input {
+  margin: 6px 8px 10px 8px;
+  padding: 8px 12px;
+  background-color: @bg1;
+  border: 1px solid @border;
+  border-radius: 8px;
+}
+#input:focus { border-color: @accent; box-shadow: 0 0 0 2px alpha(@accent,0.25); }
+#prompt { color: @muted; margin-left: 6px; }
+
+#inner-box { background-color: @bg0; padding: 4px; }
+
+#scroll { margin: 4px 8px 8px 8px; }
+
+#entry {
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+#entry:hover     { background-color: @bg1; }
+#entry:selected  { background-color: @accent; color: @bg0; }
+#entry:selected #text { color: @bg0; }
+
+#text { color: @fg; }
+#img  { margin-right: 8px; }
+
+#separator { background-color: @border; }

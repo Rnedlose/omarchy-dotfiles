@@ -6,7 +6,8 @@
   "height": 26,
   "modules-left": [
     "custom/omarchy",
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "hyprland/window"
   ],
   "modules-center": [
     "clock",
@@ -50,14 +51,22 @@
       "7": "7",
       "8": "8",
       "9": "9",
+      "10": "10",
       "active": "󱓻"
     },
     "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
+      "DP-3": [1,2,3],
+      "eDP-1": [7,8,9],
+      // "1": [],
+      // "2": [],
+      // "3": [],
+      // "4": [],
+      // "5": [],
+      // "6": [],
+      // "7": [],
+      // "8": [],
+      // "9": [],
+      // "10": []
     }
   },
   "custom/omarchy": {
