@@ -7,8 +7,8 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: CaskaydiaMono Nerd Font;
-  font-size: 12px;
+  font-family: Hack Nerd Font;
+  font-size: 16px;
 }
 
 window#waybar {
@@ -24,16 +24,18 @@ window#waybar {
   margin-right: 8px;
 }
 
-#workspaces button {
+#hyprland-workspaces button {
   all: initial;
   padding: 0 6px;
   margin: 0 1.5px;
   min-width: 9px;
+  /* opacity: 0.6; */
 }
 
-#workspaces button.empty {
-  opacity: 0.5;
+#hyprland-workspaces button.empty {
+  opacity: 0.3;
 }
+
 
 #backlight,
 #window,
@@ -47,12 +49,13 @@ window#waybar {
 #clock,
 #custom-omarchy,
 #workspaces,
+#hyprland-workspaces,
 #tray-expander {
   background-color: @background;
   color: @foreground;
   border-radius: 10px;
   padding: 0 10px;
-  margin: 5px 2;
+  margin: 5px 2px;
 }
 
 #pulseaudio {
@@ -68,4 +71,25 @@ window#waybar {
 
 tooltip {
   padding: 2px;
+}
+
+/* Override: highlight active workspace icon with theme blue */
+#hyprland-workspaces button.active {
+  color: #6e94b2;
+}
+
+#hyprland-workspaces button.focused {
+  color: #6e94b2;
+}
+
+#hyprland-workspaces button.current {
+  color: #6e94b2;
+}
+
+#hyprland-workspaces button.urgent {
+  color: #d8647e;
+}
+
+#hyprland-workspaces button:hover {
+  color: #8ba9c1;
 }

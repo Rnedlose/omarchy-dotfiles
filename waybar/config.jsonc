@@ -3,31 +3,31 @@
   "layer": "top",
   "position": "top",
   "spacing": 0,
-  "height": 26,
+  "height": 28,
   "modules-left": [
     "custom/omarchy",
-    "hyprland/workspaces",
-    "hyprland/window"
+    "hyprland/workspaces"
   ],
   "modules-center": [
-    "clock",
-    "custom/update"
+    "hyprland/window"
+    // "mpris"
   ],
   "modules-right": [
-    "mpris",
     "group/tray-expander",
     "network",
     "bluetooth",
     "pulseaudio",
     "cpu",
-    "battery"
+    "battery",
+    "clock",
+    "custom/update"
   ],
 
   "network": {
     "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
     "format" : "{icon} {essid}",
     "format-wifi" : "{icon} {essid}",
-    "format-ethernet" : "󰀂 ↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
+    "format-ethernet" : "⇣ ⇡",
     "format-disconnected" : "󰖪",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
@@ -41,32 +41,17 @@
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
-      "default": "",
-      "1": "1",
-      "2": "2",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "6": "6",
-      "7": "7",
-      "8": "8",
-      "9": "9",
-      "10": "10",
-      "active": "󱓻"
+      "default": "󰣆 ",
+      "1": " ",
+      "2": " ",
+      "3": " ",
+      "7": " ",
+      "8": "󰵅 ",
+      "9": "󰚸 ",
+      "active": "󱓻 "
     },
     "persistent-workspaces": {
-      "DP-3": [1,2,3],
-      "eDP-1": [7,8,9],
-      // "1": [],
-      // "2": [],
-      // "3": [],
-      // "4": [],
-      // "5": [],
-      // "6": [],
-      // "7": [],
-      // "8": [],
-      // "9": [],
-      // "10": []
+      "DP-3": [1,2,3,7,8,9],
     }
   },
   "custom/omarchy": {
