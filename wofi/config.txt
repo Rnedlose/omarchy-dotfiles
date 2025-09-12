@@ -1,9 +1,0 @@
-show=drun
-prompt=Run
-allow_images=true
-insensitive=true
-matching=fuzzy
-width=600
-height=420
-location=top
-no_actions=true

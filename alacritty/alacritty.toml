@@ -4,9 +4,9 @@ general.import = [ "~/.config/omarchy/current/theme/alacritty.toml" ]
 TERM = "xterm-256color"
 
 [font]
-normal = { family = "Hack Nerd Font" }
-bold = { family = "Hack Nerd Font" }
-italic = { family = "Hack Nerd Font" }
+normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
+bold = { family = "CaskaydiaMono Nerd Font", style = "Bold" }
+italic = { family = "CaskaydiaMono Nerd Font", style = "Italic" }
 size = 12
 
 [window]
@@ -16,8 +16,5 @@ decorations = "None"
 
 [keyboard]
 bindings = [
-  { key = "F11", action = "ToggleFullscreen" },
-  { key = "C", mods = "Control", action = "Copy" },
-  { key = "V", mods = "Control", action = "Paste" },
-  { key = "C", mods = "Control|Shift", chars = "\u0003" }
+{ key = "F11", action = "ToggleFullscreen" }
 ]
