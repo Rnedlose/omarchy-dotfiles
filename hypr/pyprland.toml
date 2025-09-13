@@ -1,0 +1,14 @@
+[pyprland]
+plugins = ["scratchpads"]
+
+[scratchpads.dropdown-term]
+command = "kitty --class dropdown-term tmux new-session -A -s 'Scratchpad Terminal'"
+class = "dropdown-term"
+size = "85% 60%"
+animation = "fromTop"
+
+[scratchpads.file-manager]
+command = "kitty --class file-manager tmux new-session -A -s 'File Manager' yazi"
+class = "file-manager"
+size = "90% 80%"
+animation = "fromBottom"
