@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Daily Note Script for Pyprland Scratchpad
+# Creates and opens today's daily note in neovim
+
+# Directory for daily notes
+NOTES_DIR="$HOME/Documents/Daily Notes"
+
+# Generate today's date in YYYY-MM-DD format
+TODAY=$(date +%Y-%m-%d)
+
+# Full path to today's note file
+NOTE_FILE="$NOTES_DIR/$TODAY.md"
+
+# Create the file if it doesn't exist with a basic template
+if [ ! -f "$NOTE_FILE" ]; then
+  cat >"$NOTE_FILE" <<EOF
+# Daily Note - $TODAY
+
+
+## Notes
+
+
+## Reflections
+
+
+EOF
+fi
+
+# Open the file in neovim
+exec nvim "$NOTE_FILE"
+

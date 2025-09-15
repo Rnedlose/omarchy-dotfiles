@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Daily Note Session Wrapper for Kitty + Tmux + Pyprland
+# This script properly starts the tmux session with the daily note
+
+# Set session name
+SESSION_NAME="Daily Note"
+
+# Check if tmux server is running
+if ! pgrep -x tmux > /dev/null; then
+    # No tmux server, create new session
+    exec tmux new-session -s "$SESSION_NAME" -c "$HOME" /home/rodney/.local/bin/daily-note
+fi
+
+# Check if the session already exists
+if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
+    # Session exists, attach to it
+    exec tmux attach-session -t "$SESSION_NAME"
+else
+    # Session doesn't exist, create it and run daily-note
+    exec tmux new-session -s "$SESSION_NAME" -c "$HOME" /home/rodney/.local/bin/daily-note
+fi

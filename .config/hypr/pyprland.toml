@@ -1,0 +1,26 @@
+[pyprland]
+plugins = ["scratchpads"]
+
+[scratchpads.dropdown-term]
+command = "kitty --class dropdown-term tmux new-session -A -s 'Scratchpad Terminal'"
+class = "dropdown-term"
+size = "85% 60%"
+animation = "fromTop"
+
+[scratchpads.file-manager]
+command = "kitty --class file-manager tmux new-session -A -s 'File Manager' yazi"
+class = "file-manager"
+size = "90% 80%"
+animation = "fromBottom"
+
+[scratchpads.daily-note]
+command = "kitty --class daily-note /home/rodney/.local/bin/daily-note-session"
+class = "daily-note"
+size = "40% 80%"
+animation = "fromRight"
+
+[scratchpads.daily-tasks]
+command = "kitty --class daily-tasks /home/rodney/.local/bin/daily-tasks-session"
+class = "daily-tasks"
+size = "40% 80%"
+animation = "fromLeft"
