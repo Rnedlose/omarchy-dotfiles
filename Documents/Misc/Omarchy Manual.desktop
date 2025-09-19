@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Omarchy Manual
-Comment=Omarchy Manual
-Exec=omarchy-launch-webapp https://learn.omacom.io/2/the-omarchy-manual
-Terminal=false
-Type=Application
-Icon=/home/rodney/.local/share/applications/icons/Omarchy Manual.png
-StartupNotify=true

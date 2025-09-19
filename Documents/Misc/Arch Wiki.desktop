@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Arch Wiki
-Comment=Arch Wiki
-Exec=omarchy-launch-webapp https://wiki.archlinux.org/title/Main_page
-Terminal=false
-Type=Application
-Icon=/home/rodney/.local/share/applications/icons/Arch Wiki.png
-StartupNotify=true
